@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keyboard-Workshop &amp; Coaching | Thorsten Hillmann – online &amp; in NRW</title>
-<meta name="description" content="Persönliches Keyboard-Coaching online und vor Ort in NRW: Sounds laden, Setlisten bauen, Splits einrichten, Keyboard wechseln. Yamaha, Korg, MainStage, Gig Performer. Ab 89 € pro Stunde.">
+<meta name="description" content="Persönliches Keyboard-Coaching online und vor Ort in NRW: Sounds laden, Setlisten bauen, Splits einrichten, Keyboard wechseln. Yamaha, Korg, MainStage, Gig Performer. Kostenloses Vorgespräch, ab 89 € pro Stunde.">
 <link rel="canonical" href="https://keyboard-workshops.de/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Keyboard-Workshops · Thorsten Hillmann">
@@ -21,8 +21,8 @@
   "areaServed": ["Nordrhein-Westfalen", "Online"],
   "url": "https://keyboard-workshops.de/",
   "offers": [
-    {"@type": "Offer", "name": "Video-Call / Remote", "price": "89", "priceCurrency": "EUR", "description": "pro Stunde, inkl. Nachbereitung"},
-    {"@type": "Offer", "name": "Vor Ort (NRW)", "price": "110", "priceCurrency": "EUR", "description": "pro Stunde, zzgl. Fahrtkosten, mind. 90 Minuten"},
+    {"@type": "Offer", "name": "Video-Call / Remote", "price": "89", "priceCurrency": "EUR", "description": "pro Stunde, plus Nachbereitung und kostenloses Vorgespräch (15–30 Min.)"},
+    {"@type": "Offer", "name": "Vor Ort (NRW)", "price": "110", "priceCurrency": "EUR", "description": "pro Stunde, zzgl. Fahrtkosten, mind. 90 Minuten, plus Nachbereitung und kostenloses Vorgespräch (15–30 Min.)"},
     {"@type": "Offer", "name": "Online-Gruppenworkshop Library Handling", "price": "79", "priceCurrency": "EUR", "description": "pro Person, inkl. Sound-Set, max. 6 Teilnehmer"}
   ]
 }
@@ -172,17 +172,21 @@ html[lang="en"] .de{display:none!important}
 .topics .card h3{font-size:19px}
 @media(max-width:860px){.topics{grid-template-columns:1fr}}
 .price{font-size:40px;font-weight:800;color:var(--text);margin-top:14px;line-height:1}
-.price small{display:block;font-size:15px;font-weight:500;color:var(--muted);margin-top:8px}
+.price small{display:block;font-size:15px;font-weight:500;color:var(--muted);margin-top:8px;line-height:1.4}
 .formats .card{display:flex;flex-direction:column}
 .formats .card .btn{margin-top:auto;align-self:flex-start}
+.plus{list-style:none;margin:14px 0 18px}
+.plus li{color:var(--soft);padding-left:24px;position:relative;margin:4px 0}
+.plus li:before{content:"+";position:absolute;left:2px;color:var(--red);font-weight:800}
+.vat{color:var(--muted);font-size:15px;margin-top:18px}
 .formats .card .fine{font-size:15px;color:var(--muted);margin:10px 0 18px}
 .badge{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red2);margin-bottom:8px}
 .card.featured{border-color:var(--red)}
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px;list-style:none}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;list-style:none}
 .steps li{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;color:var(--soft)}
 .steps li:before{counter-increment:s;content:counter(s);display:flex;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;align-items:center;justify-content:center;margin-bottom:12px}
 .steps b{display:block;color:var(--text);margin-bottom:4px}
-@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
 @media(max-width:520px){.steps{grid-template-columns:1fr}}
 .faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-top:12px}
 .faq summary{cursor:pointer;font-weight:700;font-size:18px}
@@ -272,8 +276,8 @@ html[lang="en"] .de{display:none!important}
         <span class="badge">Beliebt · schnell buchbar</span>
         <h3>Video-Call / Remote</h3>
         <p>Per Zoom, Teams oder FaceTime. Ideal für gezielte Fragen, Sound-Programmierung und schnelle Lösungen.</p>
-        <p class="price">89 €<small>pro Stunde · inkl. Nachbereitung</small></p>
-        <p class="fine">&nbsp;</p>
+        <p class="price">89 €<small>pro Stunde</small></p>
+        <ul class="plus"><li>Nachbereitung</li><li>Kostenloses Vorgespräch <span style="white-space:nowrap">(15–30 Min.)</span></li></ul>
         <a class="btn btn-red" href="#anfrage" data-format="Remote / Video-Call (89 €/Std.)">Anfragen →</a>
       </div>
       <div class="card">
@@ -281,6 +285,7 @@ html[lang="en"] .de{display:none!important}
         <h3>Vor Ort in NRW</h3>
         <p>Ich komme in deinen Proberaum oder dein Studio und arbeite an deinem kompletten Setup.</p>
         <p class="price">110 €<small>pro Stunde · zzgl. Fahrtkosten · mind. 90 Minuten</small></p>
+        <ul class="plus"><li>Nachbereitung</li><li>Kostenloses Vorgespräch <span style="white-space:nowrap">(15–30 Min.)</span></li></ul>
         <p class="fine">Umkreis 50 km ab Herdecke im Stundenpreis. Weiter weg: persönliches Angebot inkl. Übernachtung.</p>
         <a class="btn btn-line" href="#anfrage" data-format="Vor Ort in NRW (110 €/Std., mind. 90 Min.)">Anfragen →</a>
       </div>
@@ -293,18 +298,18 @@ html[lang="en"] .de{display:none!important}
         <a class="btn btn-line" href="mailto:kontakt@thorsten-hillmann.de?subject=Vormerken%3A%20Gruppenworkshop%20Library%20Handling">Vormerken →</a>
       </div>
     </div>
+    <p class="vat">Alle Preise sind Endpreise. Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.</p>
   </div>
 </section>
 
 <section id="ablauf">
   <div class="wrap">
     <p class="eyebrow">So läuft's ab</p>
-    <h2>In vier Schritten zu deinem Termin</h2>
+    <h2>In drei Schritten zu deinem Termin</h2>
     <ol class="steps">
       <li><b>Anfrage senden</b>Ein paar kurze Fragen unten beantworten – dauert zwei Minuten.</li>
-      <li><b>Terminvorschlag</b>Ich melde mich per E-Mail, meist unter der Woche abends oder am Wochenende.</li>
+      <li><b>Kostenloses Vorgespräch</b>15–30 Minuten: Wir klären dein Thema, dein Ziel und das passende Format.</li>
       <li><b>Coaching</b>Per Video-Call oder bei dir vor Ort – direkt an deinem Equipment.</li>
-      <li><b>Nachbereitung</b>Du bekommst die wichtigsten Punkte zusammengefasst, damit du später nachschlagen kannst.</li>
     </ol>
     <div class="split" style="margin-top:40px;align-items:start">
       <div class="card">
@@ -322,6 +327,7 @@ html[lang="en"] .de{display:none!important}
           <li>Yamaha MODX, MODX+, MODX M, Montage, Montage M</li>
           <li>Korg Kronos, Nautilus</li>
           <li>MainStage, Gig Performer</li>
+          <li>Roland Fantom, Nord Stage – auf Anfrage</li>
           <li>Allgemeine Technikberatung rund ums Live-Setup</li>
         </ul>
       </div>
@@ -357,9 +363,9 @@ html[lang="en"] .de{display:none!important}
   <div class="wrap">
     <p class="eyebrow">Häufige Fragen</p>
     <h2>Gut zu wissen</h2>
-    <details><summary>Ich bin technisch eher unsicher. Ist das Coaching trotzdem etwas für mich?</summary><p>Gerade dann. Wir gehen in deinem Tempo vor, ohne Fachchinesisch, und du bekommst die wichtigsten Schritte hinterher zum Nachlesen.</p></details>
+    <details><summary>Ich bin technisch eher unsicher. Ist das Coaching trotzdem etwas für mich?</summary><p>Gerade dann. Wir gehen in deinem Tempo vor, ohne Fachchinesisch – und du kannst jederzeit nachfragen. Im kostenlosen Vorgespräch merkst du schnell, ob es passt.</p></details>
     <details><summary>Muss ich für den Video-Call etwas installieren?</summary><p>Nein. Du bekommst einen Link und startest direkt – über Zoom, Teams oder FaceTime, je nachdem, was du schon nutzt.</p></details>
-    <details><summary>Mein Keyboard steht nicht in der Liste. Kannst du trotzdem helfen?</summary><p>Frag einfach an. Viele Themen – Setlisten, Splits, Pegel, Tablet und Software – lassen sich geräteübergreifend lösen. Wenn ich dir nicht helfen kann, sage ich es dir ehrlich vorher.</p></details>
+    <details><summary>Mein Keyboard steht nicht in der Liste. Kannst du trotzdem helfen?</summary><p>Frag einfach an. Viele Themen – Setlisten, Splits, Pegel, Tablet und Software – lassen sich geräteübergreifend lösen. Wenn ich dir nicht helfen kann, sage ich es dir ehrlich vorher – oder bringe dich mit einem Kollegen zusammen, der es kann.</p></details>
     <details><summary>Wie viel Zeit sollte ich einplanen?</summary><p>Für eine konkrete Frage reicht oft eine Stunde. Für ein komplettes Setup (z. B. eine neue Setlist mit allen Songs) plane lieber zwei bis drei Stunden, gern auf mehrere Termine verteilt.</p></details>
   </div>
 </section>
@@ -420,7 +426,7 @@ html[lang="en"] .de{display:none!important}
 
       <div class="wz-step" data-key="ok" data-required="1">
         <h3>Fast fertig</h3>
-        <label class="opt"><input type="checkbox" name="ok" value="ja"> Ich bin einverstanden, dass meine Angaben per E-Mail an Thorsten Hillmann übermittelt werden, damit meine Anfrage bearbeitet werden kann. Mehr in der <a href="datenschutz.html">Datenschutzerklärung</a>.</label>
+        <label class="opt"><input type="checkbox" name="ok" value="ja"> Ich bin einverstanden, dass meine Angaben per E-Mail an Thorsten Hillmann übermittelt werden, damit meine Anfrage bearbeitet werden kann. Mehr in der <a href="https://keyboard-sounds.com/policies/privacy-policy">Datenschutzerklärung</a>.</label>
       </div>
 
       <p class="wz-err" id="wz-err">Bitte ausfüllen, um fortzufahren.</p>
@@ -442,14 +448,14 @@ html[lang="en"] .de{display:none!important}
 
 <footer>
   <div class="wrap foot">
-    <div>© 2026 Thorsten Hillmann · Herdecke · <a href="mailto:kontakt@thorsten-hillmann.de">kontakt@thorsten-hillmann.de</a></div>
+    <div>© 2026 Thorsten Hillmann · Herdecke · <a href="mailto:kontakt@thorsten-hillmann.de">kontakt@thorsten-hillmann.de</a> · <a href="tel:+4915231742964">+49 1523 1742964</a></div>
     <nav>
       <a href="https://thorsten-hillmann.de">thorsten-hillmann.de</a>
       <a href="https://keyboard-sounds.com">Shop</a>
       <a href="https://www.youtube.com/@ThorstensKeyboardSounds">YouTube</a>
       <a href="https://www.instagram.com/th_keyboard_sounds/">Instagram</a>
       <a href="https://keyboard-sounds.com/policies/legal-notice">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
+      <a href="https://keyboard-sounds.com/policies/privacy-policy">Datenschutz</a>
     </nav>
   </div>
 </footer>
