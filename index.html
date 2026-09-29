@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keyboard-Workshop &amp; Coaching | Thorsten Hillmann – online &amp; in NRW</title>
+<meta name="description" content="Persönliches Keyboard-Coaching online und vor Ort in NRW: Sounds laden, Setlisten bauen, Splits einrichten, Keyboard wechseln. Yamaha, Korg, MainStage, Gig Performer. Ab 89 € pro Stunde.">
+<link rel="canonical" href="https://keyboard-workshops.de/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keyboard-Workshops · Thorsten Hillmann">
+<meta property="og:title" content="Keyboard-Workshop &amp; Coaching | Thorsten Hillmann">
+<meta property="og:description" content="Dein Keyboard kann mehr. Persönliches Coaching online und vor Ort in NRW – geduldig und ohne Fachchinesisch.">
+<meta property="og:url" content="https://keyboard-workshops.de/">
+<meta property="og:image" content="https://keyboard-workshops.de/bilder/thorsten-live-buehne.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Keyboard-Workshop & Coaching",
+  "provider": {"@type": "Person", "name": "Thorsten Hillmann", "url": "https://thorsten-hillmann.de/"},
+  "areaServed": ["Nordrhein-Westfalen", "Online"],
+  "url": "https://keyboard-workshops.de/",
+  "offers": [
+    {"@type": "Offer", "name": "Video-Call / Remote", "price": "89", "priceCurrency": "EUR", "description": "pro Stunde, inkl. Nachbereitung"},
+    {"@type": "Offer", "name": "Vor Ort (NRW)", "price": "110", "priceCurrency": "EUR", "description": "pro Stunde, zzgl. Fahrtkosten, mind. 90 Minuten"},
+    {"@type": "Offer", "name": "Online-Gruppenworkshop Library Handling", "price": "79", "priceCurrency": "EUR", "description": "pro Person, inkl. Sound-Set, max. 6 Teilnehmer"}
+  ]
+}
+</script>
+<style>
+
+:root{
+  --bg:#0c0c0d; --bg2:#151517; --card:#1b1b1e; --line:#2c2c31;
+  --text:#f2f2f2; --soft:#c9c9cf; --muted:#9a9aa3;
+  --red:#e8453c; --red2:#ff5a4f;
+  --radius:10px; --max:1120px;
+  --font: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{color:var(--red2);font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+h1,h2,h3{line-height:1.15;font-weight:800;letter-spacing:-.01em}
+h1{font-size:clamp(34px,6vw,58px)}
+h2{font-size:clamp(28px,4.2vw,40px);margin-bottom:14px}
+h3{font-size:21px;margin-bottom:8px}
+.lead{font-size:clamp(18px,2.2vw,21px);color:var(--soft);max-width:640px}
+.accent{color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:8px;font-weight:700;font-size:17px;text-decoration:none;transition:.15s;border:2px solid transparent;cursor:pointer}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red2)}
+.btn-line{border-color:#55555c;color:var(--text)}
+.btn-line:hover{border-color:var(--text)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(12,12,13,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.brand{font-weight:800;font-size:18px;text-decoration:none;white-space:nowrap}
+.brand span{color:var(--red)}
+.links{display:flex;gap:22px;font-size:16px}
+.links a{text-decoration:none;color:var(--soft)}
+.links a:hover{color:var(--text)}
+.lang{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;flex-shrink:0}
+.lang button{background:none;border:0;color:var(--muted);font:700 14px var(--font);padding:6px 10px;cursor:pointer}
+.lang button.on{background:var(--red);color:#fff}
+@media(max-width:860px){.links{display:none}}
+
+/* Hero */
+.hero{border-top:0;padding:64px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero-img{border-radius:16px;overflow:hidden;aspect-ratio:4/5;background:var(--card);border:1px solid var(--line)}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+.trust{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;color:var(--soft);font-size:16px}
+.trust b{color:var(--text)}
+.stars{color:#f5b301;letter-spacing:1px}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-img{max-width:340px;aspect-ratio:1/1}}
+
+/* Pain points */
+.grid4{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.pain{font-size:19px;font-weight:700;color:var(--text);margin-bottom:10px}
+.pain:before{content:"„";color:var(--red)}
+.pain:after{content:"“";color:var(--red)}
+html[lang="en"] .pain:before{content:"“"}
+html[lang="en"] .pain:after{content:"”"}
+.card p{color:var(--soft)}
+.card .more{display:inline-block;margin-top:14px;color:var(--red2);font-weight:700;text-decoration:none}
+.card .more:hover{text-decoration:underline}
+@media(max-width:760px){.grid4{grid-template-columns:1fr}}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{border:1px solid var(--line);background:var(--bg2);border-radius:999px;padding:8px 14px;font-size:16px;color:var(--soft)}
+.chip.hot{border-color:var(--red);color:var(--text)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+
+/* Mounts */
+.gallery{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:430px}
+.gallery div{border-radius:var(--radius);overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.gallery div:first-child{grid-row:1/3}
+.gallery img{width:100%;height:100%;object-fit:cover}
+@media(max-width:600px){.gallery{height:320px}}
+.checks{list-style:none;margin-top:18px}
+.checks li{padding-left:30px;position:relative;margin:8px 0;color:var(--soft)}
+.checks li:before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:800}
+
+.band-photo{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);margin:22px 0 34px;aspect-ratio:1064/556;background:var(--card)}
+.band-photo img{width:100%;height:100%;object-fit:cover}
+.band-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:15px;color:#eee}
+.about-photo{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:520px;background:var(--card)}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.about-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:15px;color:#eee}
+@media(max-width:860px){.about-photo{height:380px}}
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center}
+.stat b{display:block;font-size:30px;color:var(--red);font-weight:800}
+.stat span{font-size:15px;color:var(--soft)}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stats2{grid-template-columns:repeat(2,1fr)}
+
+/* Workshops */
+.formats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+@media(max-width:860px){.formats{grid-template-columns:1fr}}
+
+/* Reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.review q{display:block;color:var(--text);font-size:17px;margin:10px 0 14px;quotes:"„" "“"}
+html[lang="en"] .review q{quotes:"“" "”"}
+.review .who{color:var(--muted);font-size:15px}
+@media(max-width:860px){.reviews{grid-template-columns:1fr}}
+
+/* Videos */
+.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.video{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.vframe{aspect-ratio:16/9;background:linear-gradient(135deg,#1f1f23,#2a1614);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;padding:16px;text-align:center;cursor:pointer;border:0;width:100%;color:var(--soft);font:15px var(--font)}
+.vframe .play{width:62px;height:44px;border-radius:10px;background:var(--red);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px}
+.vframe small{font-size:13px;color:var(--muted);max-width:280px}
+.video iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.video h3{font-size:17px;padding:14px 16px 16px}
+@media(max-width:860px){.videos{grid-template-columns:1fr}}
+
+/* Free */
+.free{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.free .card{display:flex;flex-direction:column}
+.free .card .btn{align-self:flex-start;margin-top:auto}
+.free .card p{margin-bottom:18px}
+@media(max-width:760px){.free{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:15px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px}
+.foot nav{display:flex;flex-wrap:wrap;gap:18px}
+.foot a{text-decoration:none;color:var(--soft)}
+.foot a:hover{color:var(--text)}
+
+/* Language switch */
+html[lang="de"] .en{display:none!important}
+html[lang="en"] .de{display:none!important}
+
+/* Workshop-spezifisch */
+.nav .btn{white-space:nowrap}
+.nav .short{display:none}
+@media(max-width:430px){.nav .long{display:none}.nav .short{display:inline}}
+@media(max-width:430px){.brand{font-size:16px}.nav .btn{padding:8px 12px!important;font-size:14px!important}}
+.topics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.topics .card h3{font-size:19px}
+@media(max-width:860px){.topics{grid-template-columns:1fr}}
+.price{font-size:40px;font-weight:800;color:var(--text);margin-top:14px;line-height:1}
+.price small{display:block;font-size:15px;font-weight:500;color:var(--muted);margin-top:8px}
+.formats .card{display:flex;flex-direction:column}
+.formats .card .btn{margin-top:auto;align-self:flex-start}
+.formats .card .fine{font-size:15px;color:var(--muted);margin:10px 0 18px}
+.badge{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red2);margin-bottom:8px}
+.card.featured{border-color:var(--red)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px;list-style:none}
+.steps li{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;color:var(--soft)}
+.steps li:before{counter-increment:s;content:counter(s);display:flex;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;align-items:center;justify-content:center;margin-bottom:12px}
+.steps b{display:block;color:var(--text);margin-bottom:4px}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-top:12px}
+.faq summary{cursor:pointer;font-weight:700;font-size:18px}
+.faq details p{color:var(--soft);margin-top:10px}
+/* Anfrage-Assistent */
+.wizard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;margin-top:28px;max-width:760px}
+.wz-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:15px;margin-bottom:10px}
+.wz-bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:22px}
+.wz-bar span{display:block;height:100%;background:var(--red);width:12.5%;transition:width .2s}
+.wz-step{display:none}
+.wz-step.on{display:block}
+.wz-step h3{font-size:22px}
+.wz-step .hint{color:var(--muted);font-size:15px;margin-bottom:14px}
+.opt{display:flex;gap:12px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:10px 0;cursor:pointer;color:var(--text)}
+.opt:hover{border-color:#55555c}
+.opt input{accent-color:var(--red);width:20px;height:20px;flex-shrink:0}
+.wizard input[type=text],.wizard input[type=email],.wizard input[type=tel],.wizard textarea{width:100%;background:var(--bg2);border:1px solid #3a3a40;border-radius:8px;color:var(--text);font:18px var(--font);padding:13px 14px;margin-top:6px}
+.wizard textarea{min-height:120px;resize:vertical}
+.wizard input:focus,.wizard textarea:focus{outline:2px solid var(--red);border-color:transparent}
+.wz-nav{display:flex;justify-content:space-between;gap:12px;margin-top:22px}
+.wz-err{color:var(--red2);font-size:15px;margin-top:10px;display:none}
+.wz-done{display:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Keyboard-<span>Workshops</span></a>
+    <nav class="links">
+      <a href="#themen">Themen</a>
+      <a href="#preise">Formate &amp; Preise</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#faq">Fragen</a>
+    </nav>
+    <a class="btn btn-red" href="#anfrage" style="padding:9px 16px;font-size:16px"><span class="long">Termin anfragen</span><span class="short">Anfragen</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Keyboard-Coaching · online &amp; vor Ort in NRW</p>
+      <h1>Dein Keyboard kann mehr. <span class="accent">Ich zeig dir, wie.</span></h1>
+      <p class="lead" style="margin-top:20px">Persönliches Coaching direkt an deinem Gerät: Sounds laden, Setlisten bauen, Splits einrichten, aufs neue Keyboard umsteigen. Geduldig, ohne Fachchinesisch – auch wenn Technik nicht dein Lieblingsthema ist.</p>
+      <div class="btns">
+        <a class="btn btn-red" href="#anfrage">Termin anfragen →</a>
+        <a class="btn btn-line" href="#preise">Preise ansehen</a>
+      </div>
+      <div class="trust">
+        <span><span class="stars">★★★★★</span> <b>5,0</b> bei Google</span>
+        <span><b>Seit 1996</b> auf der Bühne</span>
+        <span><b>Ingenieur</b> (M. Eng.)</span>
+        <span><b>Online</b> oder in NRW</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="bilder/thorsten-live-buehne.jpg" alt="Thorsten Hillmann live auf der Bühne am Keyboard" width="768" height="1024">
+    </div>
+  </div>
+</section>
+
+<section id="themen">
+  <div class="wrap">
+    <p class="eyebrow">Typische Themen</p>
+    <h2>Womit ich dir helfe</h2>
+    <p class="lead">Die Probleme, die Keyboarder in Bands und zu Hause am häufigsten haben – und die wir gemeinsam lösen.</p>
+    <div class="topics">
+      <div class="card"><h3>Sounds laden &amp; organisieren</h3><p>Libraries, Performances, Combis, Backups – damit du findest, was du suchst, und nichts verlierst.</p></div>
+      <div class="card"><h3>Setlist für den Gig</h3><p>Jeder Song auf einem Tastendruck, in der richtigen Reihenfolge – mit Notizen, damit auf der Bühne nichts schiefgeht.</p></div>
+      <div class="card"><h3>Splits &amp; Layer</h3><p>Bass links, Strings rechts, Pad darüber: Zonen sauber einrichten und so speichern, dass sie live funktionieren.</p></div>
+      <div class="card"><h3>Sound im Bandmix</h3><p>Lautstärken zwischen den Songs angleichen und Sounds so einstellen, dass sie sich gegen Gitarre und Bass durchsetzen.</p></div>
+      <div class="card"><h3>Umstieg aufs neue Keyboard</h3><p>Zum Beispiel Kronos → Nautilus oder MODX → MODX M: deine Sounds mitnehmen statt von vorn anfangen.</p></div>
+      <div class="card"><h3>Software &amp; Tablet</h3><p>MainStage, Gig Performer, Noten-App auf dem Tablet – einrichten und mit dem Keyboard verbinden.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="preise">
+  <div class="wrap">
+    <p class="eyebrow">Formate &amp; Preise</p>
+    <h2>Wähle dein Format</h2>
+    <div class="formats">
+      <div class="card featured">
+        <span class="badge">Beliebt · schnell buchbar</span>
+        <h3>Video-Call / Remote</h3>
+        <p>Per Zoom, Teams oder FaceTime. Ideal für gezielte Fragen, Sound-Programmierung und schnelle Lösungen.</p>
+        <p class="price">89 €<small>pro Stunde · inkl. Nachbereitung</small></p>
+        <p class="fine">&nbsp;</p>
+        <a class="btn btn-red" href="#anfrage" data-format="Remote / Video-Call (89 €/Std.)">Anfragen →</a>
+      </div>
+      <div class="card">
+        <span class="badge">Intensiv</span>
+        <h3>Vor Ort in NRW</h3>
+        <p>Ich komme in deinen Proberaum oder dein Studio und arbeite an deinem kompletten Setup.</p>
+        <p class="price">110 €<small>pro Stunde · zzgl. Fahrtkosten · mind. 90 Minuten</small></p>
+        <p class="fine">Umkreis 50 km ab Herdecke im Stundenpreis. Weiter weg: persönliches Angebot inkl. Übernachtung.</p>
+        <a class="btn btn-line" href="#anfrage" data-format="Vor Ort in NRW (110 €/Std., mind. 90 Min.)">Anfragen →</a>
+      </div>
+      <div class="card">
+        <span class="badge">Online · max. 6 Personen</span>
+        <h3>Gruppenworkshop: Library Handling</h3>
+        <p>Für Yamaha MODX, MODX+, MODX M, Montage und Montage M. Festes Thema, kleine Gruppe, echte Praxis am Gerät.</p>
+        <p class="price">79 €<small>pro Person · inkl. Sound-Set</small></p>
+        <p class="fine">Nächste Termine: <!--TERMINE-->werden gerade geplant – trag dich unverbindlich ein.</p>
+        <a class="btn btn-line" href="mailto:kontakt@thorsten-hillmann.de?subject=Vormerken%3A%20Gruppenworkshop%20Library%20Handling">Vormerken →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ablauf">
+  <div class="wrap">
+    <p class="eyebrow">So läuft's ab</p>
+    <h2>In vier Schritten zu deinem Termin</h2>
+    <ol class="steps">
+      <li><b>Anfrage senden</b>Ein paar kurze Fragen unten beantworten – dauert zwei Minuten.</li>
+      <li><b>Terminvorschlag</b>Ich melde mich per E-Mail, meist unter der Woche abends oder am Wochenende.</li>
+      <li><b>Coaching</b>Per Video-Call oder bei dir vor Ort – direkt an deinem Equipment.</li>
+      <li><b>Nachbereitung</b>Du bekommst die wichtigsten Punkte zusammengefasst, damit du später nachschlagen kannst.</li>
+    </ol>
+    <div class="split" style="margin-top:40px;align-items:start">
+      <div class="card">
+        <h3>Was du für Online-Termine brauchst</h3>
+        <ul class="checks">
+          <li>Laptop, Tablet oder Computer mit Lautsprecher</li>
+          <li>Stabile Internetverbindung</li>
+          <li>Keine Software-Installation: Start direkt über den Link</li>
+          <li>Du musst nichts übertragen – ich teile Bildschirm bzw. Keyboard</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Unterstützte Systeme</h3>
+        <ul class="checks">
+          <li>Yamaha MODX, MODX+, MODX M, Montage, Montage M</li>
+          <li>Korg Kronos, Nautilus</li>
+          <li>MainStage, Gig Performer</li>
+          <li>Allgemeine Technikberatung rund ums Live-Setup</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Google-Bewertungen · 5 von 5 Sternen</p>
+    <h2>Was Teilnehmer sagen</h2>
+    <div class="reviews">
+      <div class="card review"><span class="stars">★★★★★</span><q>Die Computer-Session über Montage 6 und Cubase würde ich mit einer glatten EINS bewerten. Kompetenz, Freundlichkeit, Humor und Geduld – auch mit einem technischen Neuling.</q><p class="who">Lothar Pollmann · Yamaha Montage &amp; Cubase</p></div>
+      <div class="card review"><span class="stars">★★★★★</span><q>Fachlich eine unglaublich kompetente Bandbreite – und menschlich wahnsinnig angenehm, geduldig und lösungsorientiert. Ein totaler Glücksgriff!</q><p class="who">Mimi · Google</p></div>
+      <div class="card review"><span class="stars">★★★★★</span><q>Thorsten war sofort bereit, den Sound, den ich wollte, zu editieren. Innerhalb eines Tages hatte ich die 3 fertigen Sounds. Das nenne ich Service – einfach Klasse.</q><p class="who">Klaus Schmid · Yamaha MODX7</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ueber-mich">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <p class="eyebrow">Dein Coach</p>
+      <h2>Thorsten Hillmann</h2>
+      <p class="lead" style="margin-bottom:16px">Seit 1996 spiele ich Keyboard in Bands, aktuell bei der Coverband <a href="https://www.covernatixx.de">Covernatixx</a>. Was ich dir zeige, hat sich auf der Bühne bewährt – nicht nur im Übungsraum.</p>
+      <p style="color:var(--soft)">Als Maschinenbau-Ingenieur (M. Eng.) gehe ich Probleme strukturiert an. Nebenbei programmiere ich Coversounds und konstruiere Tablet-Halterungen – mehr dazu auf <a href="https://thorsten-hillmann.de">thorsten-hillmann.de</a> und im <a href="https://keyboard-sounds.com">Shop</a>.</p>
+    </div>
+    <figure class="about-photo"><img src="bilder/thorsten-kronos-stadtfest.jpg" alt="Thorsten Hillmann mit Korg Kronos beim Stadtfest Unna" loading="lazy" width="769" height="1024"><figcaption>Mit dem Korg Kronos beim Stadtfest Unna</figcaption></figure>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <p class="eyebrow">Häufige Fragen</p>
+    <h2>Gut zu wissen</h2>
+    <details><summary>Ich bin technisch eher unsicher. Ist das Coaching trotzdem etwas für mich?</summary><p>Gerade dann. Wir gehen in deinem Tempo vor, ohne Fachchinesisch, und du bekommst die wichtigsten Schritte hinterher zum Nachlesen.</p></details>
+    <details><summary>Muss ich für den Video-Call etwas installieren?</summary><p>Nein. Du bekommst einen Link und startest direkt – über Zoom, Teams oder FaceTime, je nachdem, was du schon nutzt.</p></details>
+    <details><summary>Mein Keyboard steht nicht in der Liste. Kannst du trotzdem helfen?</summary><p>Frag einfach an. Viele Themen – Setlisten, Splits, Pegel, Tablet und Software – lassen sich geräteübergreifend lösen. Wenn ich dir nicht helfen kann, sage ich es dir ehrlich vorher.</p></details>
+    <details><summary>Wie viel Zeit sollte ich einplanen?</summary><p>Für eine konkrete Frage reicht oft eine Stunde. Für ein komplettes Setup (z. B. eine neue Setlist mit allen Songs) plane lieber zwei bis drei Stunden, gern auf mehrere Termine verteilt.</p></details>
+  </div>
+</section>
+
+<section id="anfrage">
+  <div class="wrap">
+    <p class="eyebrow">Nächster Schritt</p>
+    <h2>Termin anfragen</h2>
+    <p class="lead">Beantworte ein paar kurze Fragen. Am Ende öffnet sich dein E-Mail-Programm mit einer fertig ausgefüllten Nachricht – du musst nur noch auf Senden klicken.</p>
+
+    <form class="wizard" id="wizard" novalidate>
+      <div class="wz-top"><span id="wz-count">Frage 1 von 7</span></div>
+      <div class="wz-bar"><span id="wz-bar"></span></div>
+
+      <div class="wz-step on" data-key="format" data-required="1">
+        <h3>Welches Format interessiert dich?</h3>
+        <label class="opt"><input type="radio" name="format" value="Remote / Video-Call (89 €/Std.)"> Remote / Video-Call (89 €/Std.)</label>
+        <label class="opt"><input type="radio" name="format" value="Vor Ort in NRW (110 €/Std., mind. 90 Min.)"> Vor Ort in NRW (110 €/Std., mind. 90 Min.)</label>
+        <label class="opt"><input type="radio" name="format" value="Gruppenworkshop Library Handling (79 €)"> Gruppenworkshop: Library Handling (79 €)</label>
+        <label class="opt"><input type="radio" name="format" value="Bin mir noch unsicher"> Bin mir noch unsicher</label>
+      </div>
+
+      <div class="wz-step" data-key="thema" data-required="1">
+        <h3>Was ist dein Thema oder Problem?</h3>
+        <p class="hint">Ein, zwei Sätze reichen – dann kann ich besser einschätzen, wie ich dir helfe.</p>
+        <textarea name="thema" placeholder="z. B. Ich möchte meine Setlist für den nächsten Gig im MODX einrichten …"></textarea>
+      </div>
+
+      <div class="wz-step" data-key="geraet" data-required="1">
+        <h3>Welches Gerät bzw. Setup nutzt du?</h3>
+        <p class="hint">Mehrfachauswahl möglich.</p>
+        <label class="opt"><input type="checkbox" name="geraet" value="Yamaha MODX / Montage"> Yamaha MODX / Montage</label>
+        <label class="opt"><input type="checkbox" name="geraet" value="Korg Kronos / Nautilus"> Korg Kronos / Nautilus</label>
+        <label class="opt"><input type="checkbox" name="geraet" value="Roland Fantom"> Roland Fantom</label>
+        <label class="opt"><input type="checkbox" name="geraet" value="Nord Stage"> Nord Stage</label>
+        <label class="opt"><input type="checkbox" name="geraet" value="MainStage / Gig Performer"> MainStage / Gig Performer</label>
+        <label class="opt"><input type="checkbox" name="geraet" value="Sonstiges / mehrere Geräte"> Sonstiges / mehrere Geräte</label>
+      </div>
+
+      <div class="wz-step" data-key="termin">
+        <h3>Hast du einen Wunschtermin?</h3>
+        <p class="hint">Freiwillig. Coachings finden meist unter der Woche abends statt, am Wochenende gern auch morgens.</p>
+        <input type="text" name="termin" placeholder="z. B. Dienstag oder Donnerstag ab 19 Uhr">
+      </div>
+
+      <div class="wz-step" data-key="name" data-required="1">
+        <h3>Wie heißt du?</h3>
+        <input type="text" name="name" autocomplete="name">
+      </div>
+
+      <div class="wz-step" data-key="kontakt" data-required="1">
+        <h3>Wie erreiche ich dich?</h3>
+        <label style="display:block;color:var(--soft)">E-Mail
+          <input type="email" name="email" autocomplete="email"></label>
+        <label style="display:block;color:var(--soft);margin-top:14px">Telefon (optional – falls dir ein kurzer Rückruf lieber ist)
+          <input type="tel" name="telefon" autocomplete="tel"></label>
+      </div>
+
+      <div class="wz-step" data-key="ok" data-required="1">
+        <h3>Fast fertig</h3>
+        <label class="opt"><input type="checkbox" name="ok" value="ja"> Ich bin einverstanden, dass meine Angaben per E-Mail an Thorsten Hillmann übermittelt werden, damit meine Anfrage bearbeitet werden kann. Mehr in der <a href="datenschutz.html">Datenschutzerklärung</a>.</label>
+      </div>
+
+      <p class="wz-err" id="wz-err">Bitte ausfüllen, um fortzufahren.</p>
+      <div class="wz-nav" id="wz-nav">
+        <button type="button" class="btn btn-line" id="wz-back">Zurück</button>
+        <button type="button" class="btn btn-red" id="wz-next">Weiter</button>
+      </div>
+
+      <div class="wz-done" id="wz-done">
+        <h3>Fast geschafft!</h3>
+        <p style="color:var(--soft)">Dein E-Mail-Programm sollte sich mit einer fertigen Nachricht geöffnet haben. Bitte dort nur noch auf <b>Senden</b> klicken.</p>
+        <p style="color:var(--soft);margin-top:10px">Öffnet sich nichts? <a id="wz-mail" href="mailto:kontakt@thorsten-hillmann.de">Hier klicken</a> oder direkt an <a href="mailto:kontakt@thorsten-hillmann.de">kontakt@thorsten-hillmann.de</a> schreiben.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Thorsten Hillmann · Herdecke · <a href="mailto:kontakt@thorsten-hillmann.de">kontakt@thorsten-hillmann.de</a></div>
+    <nav>
+      <a href="https://thorsten-hillmann.de">thorsten-hillmann.de</a>
+      <a href="https://keyboard-sounds.com">Shop</a>
+      <a href="https://www.youtube.com/@ThorstensKeyboardSounds">YouTube</a>
+      <a href="https://www.instagram.com/th_keyboard_sounds/">Instagram</a>
+      <a href="https://keyboard-sounds.com/policies/legal-notice">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('wizard');
+  var steps = [].slice.call(form.querySelectorAll('.wz-step'));
+  var i = 0;
+  var back = document.getElementById('wz-back'), next = document.getElementById('wz-next');
+  var err = document.getElementById('wz-err');
+
+  function show(n){
+    steps.forEach(function(s, k){ s.classList.toggle('on', k === n); });
+    document.getElementById('wz-count').textContent = 'Frage ' + (n + 1) + ' von ' + steps.length;
+    document.getElementById('wz-bar').style.width = ((n + 1) / steps.length * 100) + '%';
+    back.style.visibility = n === 0 ? 'hidden' : 'visible';
+    next.textContent = n === steps.length - 1 ? 'E-Mail erstellen' : 'Weiter';
+    err.style.display = 'none';
+  }
+  function val(name){
+    var els = form.querySelectorAll('[name="' + name + '"]');
+    var out = [];
+    els.forEach(function(e){
+      if ((e.type === 'radio' || e.type === 'checkbox') ? e.checked : e.value.trim()) out.push(e.type === 'radio' || e.type === 'checkbox' ? e.value : e.value.trim());
+    });
+    return out.join(', ');
+  }
+  function valid(step){
+    if (!step.dataset.required) return true;
+    var k = step.dataset.key;
+    if (k === 'kontakt') return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val('email'));
+    return val(k) !== '';
+  }
+  function mail(){
+    var body = [
+      'Hallo Thorsten,', '',
+      'ich interessiere mich für ein Keyboard-Coaching.', '',
+      'Format: ' + val('format'),
+      'Gerät/Setup: ' + val('geraet'),
+      'Wunschtermin: ' + (val('termin') || '–'), '',
+      'Mein Thema:', val('thema'), '',
+      'Name: ' + val('name'),
+      'E-Mail: ' + val('email'),
+      'Telefon: ' + (val('telefon') || '–'), '',
+      'Viele Grüße', val('name')
+    ].join('\n');
+    return 'mailto:kontakt@thorsten-hillmann.de?subject=' + encodeURIComponent('Workshop-Anfrage: ' + val('format')) + '&body=' + encodeURIComponent(body);
+  }
+  next.addEventListener('click', function(){
+    if (!valid(steps[i])) { err.style.display = 'block'; return; }
+    if (i < steps.length - 1) { show(++i); return; }
+    var link = mail();
+    document.getElementById('wz-mail').href = link;
+    steps.forEach(function(s){ s.classList.remove('on'); });
+    document.getElementById('wz-nav').style.display = 'none';
+    err.style.display = 'none';
+    document.getElementById('wz-done').style.display = 'block';
+    window.location.href = link;
+  });
+  back.addEventListener('click', function(){ if (i > 0) show(--i); });
+  // Format-Buttons in den Preiskarten wählen das Format vor
+  document.querySelectorAll('[data-format]').forEach(function(a){
+    a.addEventListener('click', function(){
+      form.querySelectorAll('[name="format"]').forEach(function(r){ r.checked = r.value.indexOf(a.dataset.format.split(' (')[0]) === 0; });
+    });
+  });
+  show(0);
+})();
+</script>
+</body>
+</html>
